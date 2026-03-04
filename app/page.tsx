@@ -240,20 +240,26 @@ export default function Home() {
     <main className="min-h-screen bg-slate-50 pb-12 font-sans">
       <div className="max-w-md mx-auto bg-white min-h-screen shadow-2xl border-x border-slate-200/50">
         {/* Header with Background and Glassmorphism */}
-        <header className="relative min-h-[220px] flex flex-col justify-end overflow-hidden sticky top-0 z-20 shadow-lg bg-slate-900">
-          {/* Background Image Layer - Adjusted to show the guitar better */}
+        <header className="relative min-h-[320px] flex flex-col justify-end overflow-hidden sticky top-0 z-20 shadow-lg bg-slate-900">
+          {/* Background Image Layer - Focused on the body and bridge */}
           <div
-            className="absolute inset-0 bg-cover bg-[center_top] z-0"
+            className="absolute inset-0 bg-cover bg-bottom z-0"
             style={{ backgroundImage: 'url("/les-paul.png")' }}
           />
-          {/* Gradient Overlay for Text Readability - slightly more transparent at top */}
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent z-10" />
+          {/* Subtle vignette for high-end look */}
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(15,23,42,0.6)_100%)] z-10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent z-15" />
 
-          {/* Glassmorphism Content Area - reduced blur to see details */}
-          <div className="relative z-20 p-5 backdrop-blur-[1px]">
-            <h1 className="text-xl font-black mb-4 tracking-tighter flex items-center gap-2 text-white drop-shadow-md">
-              <span className="text-2xl drop-shadow-lg">🎸</span> AI耳コピアシスタント
-            </h1>
+          {/* Glassmorphism Content Area */}
+          <div className="relative z-20 p-6 backdrop-blur-[1px]">
+            <div className="flex items-center justify-between mb-4">
+              <h1 className="text-3xl font-black tracking-tighter text-white uppercase drop-shadow-2xl">
+                Virtuoso<span className="text-blue-400">AI</span>
+              </h1>
+              <span className="text-xs font-bold text-white/50 tracking-widest uppercase bg-white/10 px-2 py-1 rounded backdrop-blur-md border border-white/10">
+                Premium
+              </span>
+            </div>
 
             <div className="flex gap-2 bg-white/10 p-1.5 rounded-2xl backdrop-blur-md border border-white/20 shadow-inner">
               <input

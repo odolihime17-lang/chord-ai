@@ -1,12 +1,12 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AI耳コピアシスタント | Guitar Chord Analysis",
-  description: "曲名からコード進行とギタータブ譜を自動生成するプロトタイプ",
+  title: "Virtuoso AI | Premium Guitar Chords",
+  description: "AI-powered guitar chord analyzer and lyrical history.",
 };
 
 export const viewport: Viewport = {
@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={`${inter.className} antialiased bg-slate-100`}>
+      <body className={`${outfit.className} antialiased bg-slate-100`}>
         {children}
       </body>
     </html>
