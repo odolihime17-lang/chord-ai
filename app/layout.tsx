@@ -5,7 +5,7 @@ import "./globals.css";
 const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Virtuoso AI | Premium Guitar Chords",
+  title: "Chord AI | Premium Guitar Chords",
   description: "AI-powered guitar chord analyzer and lyrical history.",
 };
 

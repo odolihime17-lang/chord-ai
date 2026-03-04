@@ -253,11 +253,11 @@ export default function Home() {
           {/* Glassmorphism Content Area */}
           <div className="relative z-20 p-6 backdrop-blur-[1px]">
             <div className="flex items-center justify-between mb-4">
-              <h1 className="text-3xl font-black tracking-tighter text-white uppercase drop-shadow-2xl">
-                Virtuoso<span className="text-blue-400">AI</span>
+              <h1 className="text-4xl font-black tracking-tighter text-white uppercase drop-shadow-2xl italic">
+                Chord <span className="text-blue-400">AI</span>
               </h1>
-              <span className="text-xs font-bold text-white/50 tracking-widest uppercase bg-white/10 px-2 py-1 rounded backdrop-blur-md border border-white/10">
-                Premium
+              <span className="text-[10px] font-bold text-white/60 tracking-[0.2em] uppercase bg-white/5 px-2 py-1 rounded backdrop-blur-md border border-white/10">
+                Studio Edition
               </span>
             </div>
 
